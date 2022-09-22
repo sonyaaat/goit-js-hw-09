@@ -16,3 +16,26 @@ img {
   display: block;
   max-width: 100%;
 }
+.timer{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.field:not(:last-child)
+{
+  margin-right: 20px;
+}
+.field{
+  color: white;
+  border-radius: 5px;
+  border: 2px solid red;
+  text-align: center;
+  width: 500px;
+  background-color: rgb(114, 114, 217);
+  margin:auto;
+  font-size: 30px;
+}
+.value{
+  display: block;
+}
