@@ -37,7 +37,6 @@ function onStartClick()
 {
     startBtn.setAttribute("disabled",true)
     input.setAttribute("disabled",true)
-    console.log(input)
     const selectedTime=selectedDate.getTime();
     updateClock(convertMs(selectedTime-Date.now()))
     intervalId=setInterval(() => {
@@ -50,6 +49,7 @@ function onStartClick()
         const time=convertMs(0)
         updateClock(time)
         startBtn.removeAttribute("disabled")
+        input.removeAttribute("disabled")
         return
     }
     
